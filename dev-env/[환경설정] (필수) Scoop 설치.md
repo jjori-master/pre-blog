@@ -1,4 +1,4 @@
-[환경설정] (필수) Scoop 설치
+#### [환경설정] (필수) Scoop 설치
 
 > 윈도우 패키지 매니저인 scoop을 설치 한다.
 > 모든 단계는 [bemantakumi](https://okky.kr/user/info/4562)님의 
@@ -49,6 +49,12 @@ $> scoop bucket add versions
 
 ```bash
 $>  scoop bucket add java
+```
+
+###### Phase08.  필요한 프로그램 설치 - 필요한거 계속 늘려나가기
+
+```bash
+$> scoop install typora vscode gitkraken go terraform hyper
 ```
 
 
