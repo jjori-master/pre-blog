@@ -2,8 +2,6 @@
 
 > 전호진님의 [Windows10에서 Linux 개발환경 구축 ](https://crynut84.github.io/2018/01/10/building-dev-env-using-wsl/)을 참조하여 작성된 글입니다.
 >
-> TODO - `Hyper` 터미널의 설명을 기입할 것~
->
 > [공식사이트](https://hyper.is/), [awesome-hyper](https://github.com/bnb/awesome-hyper)
 
 
@@ -18,5 +16,14 @@ $> scoop install hyper
 
 
 
-###### Phase02. Scoop을 통해 hyper 설치
+###### Phase02. 최고 기본 설정
 
+> Hyper 실행 후 단축키 `Ctrl + ,` 를 누르면 설정영역이 나오는데
+> shell 과 shellArgs를 아래와 같이 설정한다.
+
+```json
+shell: 'C:\\Windows\\System32\\cmd.exe',
+shellArgs: ['--login', '-i', '/c wsl'],
+```
+
+> 설정 후 다시 실행하면 `넌 이미 wsl에 접속해 있다~!!`
