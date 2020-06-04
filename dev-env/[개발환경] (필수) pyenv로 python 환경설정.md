@@ -58,7 +58,7 @@ pyenv 1.2.18-19-gcf81e5a0 -> 버전이 나오면 정상 설치
 
 ```bash
 # you can check available versions
-pyenv install — list
+pyenv install --list
 
 # install python
 pyenv install 3.8.2
