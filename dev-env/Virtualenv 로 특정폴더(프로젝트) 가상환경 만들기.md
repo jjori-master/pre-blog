@@ -26,26 +26,36 @@
 $> git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 $> echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 $> source ~/.bashrc
-
-# 가상환경 만들기
-$> pyenv virtualenv 3.8.2 {폴더 이름}
-
-# 가상환경 삭제
-$> pyenv virtualenv-delete {폴더 이름}
-
-# 가상환경 구동!!
-$> pyenv activate {폴더 이름}
-
-# 구동 후 커맨드라인
-({폴더 이름}) $> _
-
 ```
 
 
 
+###### Phase02.  명령어를 통한 가상환경 생성/삭제, 적용/해제
+
+```bash
+# 가상환경 만들기
+$> pyenv virtualenv 3.8.2 {환경 이름}
+   => 보통은(정말?) 프로젝트 이름으로 환경이름을 만든다.
+
+# 가상환경 삭제
+$> pyenv virtualenv-delete {환경 이름}
+
+# 가상환경 구동!!
+$> pyenv activate {환경 이름}
+
+# 구동 후 커맨드라인
+({환경 이름}) $> _
+```
+
+> 주의!!. 현재 pyenv 버전(1.2.18-19-gcf81e5a0)에서 `pyenv activate` 명령어를
+> 실행시키면,
+>
+> ```bash
+> pyenv-virtualenv: prompt changing will be removed from future release. configure `export PYENV_VIRTUALENV_DISABLE_PROMPT=1' to simulate the behavior.` 
+> ```
+>
+> 라는 경고 메시지가 나오는데 다음 버전으로 릴리즈 되면 프롬프트 앞 환경이름은 없어 진다라는 이야기  `export PYENV_VIRTUALENV_DISABLE_PROMPT=1`을 환경설정에 집어 넣고 시뮬레이션 해보면 환경을 적용 후 프롬프트에 환경이름이 사라지는걸 볼 수 있다.
+
+
+
 #### 끗~~
-
-
-
-
-
