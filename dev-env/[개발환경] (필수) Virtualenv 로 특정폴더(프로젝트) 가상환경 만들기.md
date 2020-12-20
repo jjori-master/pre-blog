@@ -26,6 +26,10 @@
 $> git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 $> echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 $> source ~/.bashrc
+
+# zsh 사용시
+$> echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+$> source ~/.zshrc
 ```
 
 
