@@ -22,6 +22,10 @@ $> git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
 $> echo 'export AUTOENV_ENV_FILENAME=".autoenv"' >> ~/.bashrc
 
 $> echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
+
+# zsh
+$> echo 'export AUTOENV_ENV_FILENAME=".autoenv"' >> ~/.zshrc
+$> echo 'source ~/.autoenv/activate.sh' >> ~/.zshrc
 ```
 
 
