@@ -1,4 +1,4 @@
-#### [개발환경] (필수) pyenv로 python 환경설정
+#### [개발환경]  pyenv로 python 환경설정 (WSL)
 
 > [Install Python 3.7.4 in pyenv on Ubuntu 18.04](https://mahdiech.com/install-python-374-in-pyenv-on-ubuntu-1804/)을 거의 대부분 차용하였음.
 
